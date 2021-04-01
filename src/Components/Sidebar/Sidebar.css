@@ -1,0 +1,10 @@
+.sidebar{
+    background-color: #851753;
+    height: 600px;
+    margin-left: 150px;
+    padding: 50px 90px;
+}
+
+.sidebar h2,p{
+    color: white;
+}
