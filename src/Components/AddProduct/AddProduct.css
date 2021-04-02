@@ -10,7 +10,7 @@
   
   h1 {
     font-weight: 100;
-    color: white;
+    color: black;
     text-align: center;
     padding-bottom: 10px;
     border-bottom: 1px solid rgb(79, 98, 148);
@@ -22,14 +22,7 @@
     margin: 0 auto;
   }
   
-  p {
-    color: #bf1650;
-  }
-  
-  p::before {
-    display: inline;
-    content: "⚠ ";
-  }
+ 
   
   input {
     display: block;
@@ -53,8 +46,8 @@
     font-weight: 200;
   }
   
-  button[type="submit"],
-  input[type="submit"] {
+  
+ input[type="submit"] {
     background: #851753;
     color: white;
     text-transform: uppercase;
@@ -88,7 +81,7 @@
     transition: 0.3s all;
   }
   
-  button[type="submit"],
+
   input[type="button"],
   input[type="submit"] {
     -webkit-appearance: none;

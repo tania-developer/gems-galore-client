@@ -2,9 +2,18 @@ import React, { useEffect, useState } from 'react';
 import ProductCard from '../ProductCard/ProductCard';
 import Container from '@material-ui/core/Container';
 import './Home.css'
+import { useHistory } from 'react-router';
 
 const Home = () => {
     const [products, setProduct] = useState([]);
+    
+
+    const history = useHistory()
+    const handleCheckOut = (id) => {
+        history.push('/checkout');
+      
+        console.log(id);
+    }
 
     useEffect(() => {
         fetch('http://localhost:5000/products')
@@ -15,7 +24,7 @@ const Home = () => {
         
             <div className="productContainer">
                 {
-                    products.map(pd => <ProductCard pd={pd}></ProductCard>)
+                    products.map(pd => <ProductCard pd={pd} handleCheckOut={handleCheckOut}></ProductCard>)
                 }
             </div>
        

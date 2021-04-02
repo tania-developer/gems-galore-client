@@ -23,6 +23,10 @@ const headersData = [
         href: "/admin",
     },
     {
+        label: "Checkout",
+        href: "/checkout",
+    },
+    {
         label: "Log In",
         href: "/login",
     },

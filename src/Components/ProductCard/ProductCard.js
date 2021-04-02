@@ -43,7 +43,9 @@ const useStyles = makeStyles((muiBaseTheme) => ({
  
 }));
 
-const ProductCard = ({pd}) => {
+const ProductCard = (props) => {
+    const pd = props.pd;
+    const handleCheckOut = props.handleCheckOut;
     const { card, media, content, button, heading, divider } = useStyles();
     return (
         <div>
@@ -69,7 +71,7 @@ const ProductCard = ({pd}) => {
           <Divider className={divider} light />
             <Typography variant={"h6"}>
               ${pd.price}
-              <button className={button}>
+              <button onClick={() => handleCheckOut(pd._id)} className={button}>
               Buy Now
               </button>
             </Typography>

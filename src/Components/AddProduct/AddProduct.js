@@ -43,7 +43,8 @@ const AddProduct = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)} className="addForm">
+            <h3>Add products</h3>
             <label>Product Name</label>
             <input name="Name" defaultValue="ring" ref={register} />
             <label>Product Description</label>

@@ -5,6 +5,18 @@
     padding: 50px 90px;
 }
 
-.sidebar h2,p{
+.sidebar h2{
     color: white;
+    font-size: 1.8rem;
+}
+
+.adminButton{
+    background-color: #851753;
+    border: none;
+    line-height: 3rem;
+    color: white;
+    font-size: 16px;
+}
+.adminButton:hover{
+    background: #bf1650;
 }
