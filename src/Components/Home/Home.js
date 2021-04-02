@@ -10,7 +10,7 @@ const Home = () => {
 
     const history = useHistory()
     const handleCheckOut = (id) => {
-        history.push('/checkout');
+        history.push(`/checkout/${id}`);
       
         console.log(id);
     }
@@ -24,7 +24,7 @@ const Home = () => {
         
             <div className="productContainer">
                 {
-                    products.map(pd => <ProductCard pd={pd} handleCheckOut={handleCheckOut}></ProductCard>)
+                    products.map(pd => <ProductCard pd={pd} handleCheckOut={handleCheckOut} key={pd._id}></ProductCard>)
                 }
             </div>
        

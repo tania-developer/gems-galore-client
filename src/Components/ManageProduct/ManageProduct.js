@@ -62,7 +62,7 @@ const ManageProduct = (props) => {
                     </TableHead>
                     <TableBody>
                         {allProduct.map((pd) => (
-                            <StyledTableRow key={pd.name}>
+                            <StyledTableRow key={pd._id}>
                                 <StyledTableCell component="th" scope="row">
                                     {pd.name}
                                 </StyledTableCell>
