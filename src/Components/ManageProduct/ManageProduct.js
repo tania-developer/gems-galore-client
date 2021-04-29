@@ -40,7 +40,7 @@ const ManageProduct = (props) => {
     const deleteProduct = props.deleteProduct;
     const [allProduct, setAllProduct] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://shielded-scrubland-74010.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setAllProduct(data))
     }, [])

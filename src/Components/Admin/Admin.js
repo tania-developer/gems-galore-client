@@ -16,7 +16,7 @@ const Admin = () => {
         setManage(false);
     }
     const deleteProduct = (id) => {
-        fetch(`http://localhost:5000/delete/${id}`,{
+        fetch(`https://shielded-scrubland-74010.herokuapp.com/delete/${id}`,{
             method: 'DELETE'
         })
         .then(res => res.json())

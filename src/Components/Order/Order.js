@@ -23,7 +23,7 @@ const Order = () => {
     const email = loggedInUser.email;
 
     useEffect(() => {
-        fetch('http://localhost:5000/product?email='+email)
+        fetch('https://shielded-scrubland-74010.herokuapp.com/product?email='+email)
             .then(res => res.json())
             .then(data => setOrderPd(data))
     }, [])

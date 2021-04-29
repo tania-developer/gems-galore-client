@@ -27,7 +27,7 @@ const Checkout = () => {
 
 
         useEffect(() => {
-            fetch(`http://localhost:5000/product/${id}`)
+            fetch(`https://shielded-scrubland-74010.herokuapp.com/product/${id}`)
                 .then(res => res.json())
                 .then(data => setSingleProduct(data))
         }, [id])
@@ -41,7 +41,7 @@ const Checkout = () => {
             date: new Date(),
             image: singleProduct[0].image
         }
-        fetch('http://localhost:5000/orderProduct',{
+        fetch('https://shielded-scrubland-74010.herokuapp.com/orderProduct',{
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

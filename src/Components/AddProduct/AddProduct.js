@@ -15,7 +15,7 @@ const AddProduct = () => {
             details: data.details,
             imgUrl: imgUrl
         }
-        fetch('http://localhost:5000/addProduct',{
+        fetch('https://shielded-scrubland-74010.herokuapp.com/addProduct',{
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
